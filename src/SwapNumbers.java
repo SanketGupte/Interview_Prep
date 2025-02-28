@@ -21,7 +21,12 @@ public class SwapNumbers {
         System.out.println("Enter the second number: ");
         b = sc.nextInt();
 
-        swapNumbers(a, b);
+        a = a - b;
+        b = a + b;
+        a = b - a;
+        System.out.println("After swap numbers: " + a + ", " + b);
+
+//        swapNumbers(a, b);
 
     }
 }
